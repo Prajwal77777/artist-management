@@ -1,0 +1,6 @@
+BASE_DOMAIN: 'http://localhost:3000'
+CLIENT_DOMAIN: 'http://localhost:3001'
+
+DB_NAME: 'aura_cms'
+DB_USER: 'postgres'
+DB_PASSWORD: "Prajwal@185"
