@@ -15,7 +15,7 @@
 #  updated_at      :datetime         not null
 #
 class User < ApplicationRecord
-  has_secured_password
+  has_secure_password
   enum :role, { super_user: 0, artist_manager: 1, artist: 2 }
   enum :gender, { male: 0, female: 1, other: 2 }
 end

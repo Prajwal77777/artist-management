@@ -9,7 +9,7 @@ class CreateUsers < ActiveRecord::Migration[7.1]
       t.integer :gender
       t.integer :role
       t.string :dob
-      t.timestamps
+      t.timestamps default: -> { 'CURRENT_TIMESTAMP' }
     end
   end
 end

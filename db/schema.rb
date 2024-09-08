@@ -23,8 +23,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_07_165029) do
     t.integer "gender"
     t.integer "role"
     t.string "dob"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.datetime "updated_at", default: -> { "CURRENT_TIMESTAMP" }, null: false
   end
 
 end
